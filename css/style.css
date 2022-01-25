@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+body {
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #5e17eb;
+    background-image: url('/img/fundo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 1% 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 1% 0;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    padding: 1rem 4rem;
+    border: 1px solid rgb(35, 35, 35);
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    background-color: white;
+}
+
+.navbar ul {
+    margin: -15% auto;
+    display: flex;
+    width: 80%;
+    list-style: none;
+    justify-content: space-evenly;
+    position: absolute;
+    letter-spacing: 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.navbar ul li {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar ul li:hover {
+    font-size: 1.8rem;
+    color:rgb(35, 35, 35);
+}
+
+/* Main */
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sobre-mim {
+    background-image: linear-gradient( to bottom, #5e17eb 50%, white);
+    font-family: Arial;
+    justify-content: center;
+    text-align: center;
+    color:rgb(35, 35, 35);
+    padding: 0 10%;
+}
+
+.sobre-mim h2 {
+    font-family: 'Dongle', sans-serif;
+    font-size: 4rem;
+}
+
+.sobre-mim p {
+    font-size: 1.6rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.text {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e17eb;
+    background-image: url('/img/fundo.png');
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: rgb(35, 35, 35);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+    color: rgb(35, 35, 35);
+    font-size: 1rem;
+    font-family: Arial;
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+.card:hover {
+    filter: unset;
+}
+
+.card:hover > .card-wrapper::before {
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.3rem;
+}
+
+.contato {
+    text-align: center;
+    color: rgb(35, 35, 35);
+    background-image: linear-gradient( to top, #5e17eb 50%, white);
+    font-size: 2rem;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #5e17eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(35, 35, 35);
+    font-size: 2rem;
+}
