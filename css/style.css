@@ -240,13 +240,13 @@ a:hover {
     .header-container {
         padding: 0 2%;
         background-image: url('../img/fundo-responsivo.png');
-        background-position-y: 11rem;
-        justify-content: space-evenly;
+        background-position-y: 9rem;
+        justify-content: end;
         align-items: baseline;
     }
 
     .header {
-        margin: 0 auto;
+        margin: 0 auto 20% auto;
     }
 
     h1 {
@@ -262,7 +262,9 @@ a:hover {
     .social-media a {
         padding: 1rem 3rem;
         min-width: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        border: 2px solid rgb(35, 35, 35);
     }
 
     .navbar ul {
