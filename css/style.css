@@ -11,10 +11,10 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #5e17eb;
-    background-image: url('/img/fundo.png');
+    background-image: url('../img/fundo.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,123 +59,32 @@ a:hover {
     background-color: white;
 }
 
-.checkbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.checkbox {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    right: 0;
+.navbar ul {
     top: 0;
     display: flex;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out 0s';
-}
-
-.checkbox .trace {
-    width: 50px;
-    height: 2px;
-    background-color: rgb(35, 35, 35);
+    width: 80%;
+    list-style: none;
+    justify-content: space-evenly;
     position: absolute;
-    border-radius: 4px;
-    transition: 0.5s ease-in-out;
+    letter-spacing: 5px;
 }
 
-.checkbox .trace:nth-child(1) {
-    top: 26px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(2) {
-    top: 46px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(3) {
-    top: 66px;
-    transform: rotate(0);
-}
-
-#toggle {
-    display: none;
-}
-
-.menu {
-    position: absolute;
-    top: 28px;
-    right: 30px;
-    background-color: transparent;
-    height: 4px;
-    width: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
-    z-index: -1;
-    transition: 400ms ease-in-out 0s;
-}
-
-.menu-itens {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: 400ms ease-in-out 0s;
-}
-
-.menu-itens ul {
-    list-style-type: none;
-}
-
-.menu-itens ul li a {
-    margin: 10px 0;
-    color: rgb(35, 35, 35);
+.navbar ul li a {
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 40px;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(1) {
-    transform: rotate(45deg);
-    top: 47px;
+.navbar ul li {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(2) {
-    transform: translate(-100px);
-    width: 30px;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#toggle:checked + .checkbox .trace:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 48px; 
-}
-
-#toggle:checked + .checkbox {
-    background-color: white;
-}
-
-#toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax white;
-    z-index: 1;
-}
-
-#toggle:checked ~ .menu-itens {
-    visibility: visible;
-    opacity: 1;
+.navbar ul li:hover {
+    font-size: 1.8rem;
+    color:rgb(35, 35, 35);
 }
 
 /* Main */
@@ -186,7 +95,24 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 3rem 0;
+}
+
+.sobre-mim {
+    background-image: linear-gradient( to bottom, #5e17eb 50%, white);
+    font-family: Arial;
+    justify-content: center;
+    text-align: center;
+    color:rgb(35, 35, 35);
+    padding: 0 10%;
+}
+
+.sobre-mim h2 {
+    font-family: 'Dongle', sans-serif;
+    font-size: 4rem;
+}
+
+.sobre-mim p {
+    font-size: 1.6rem;
 }
 
 .card-container {
@@ -194,6 +120,12 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
+}
+
+.text {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
 }
 
 .card {
@@ -205,7 +137,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: #5e17eb;
-    background-image: url('/img/fundo.png');
+    background-image: url('../img/fundo.png');
     background-position: 75%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -219,7 +151,8 @@ a:hover {
     width: 40%;
     letter-spacing: 1px;
     color: rgb(35, 35, 35);
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: Arial;
 }
 
 .card-wrapper {
@@ -260,6 +193,12 @@ a:hover {
     transition: 0.5s ease-in-out;
 }
 
+.card-wrapper p a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
 .card:hover {
     filter: unset;
 }
@@ -276,6 +215,13 @@ a:hover {
     font-size: 1.3rem;
 }
 
+.contato {
+    text-align: center;
+    color: rgb(35, 35, 35);
+    background-image: linear-gradient( to top, #5e17eb 50%, white);
+    font-size: 2rem;
+}
+
 .footer {
     width: 100%;
     height: 100px;
@@ -285,4 +231,100 @@ a:hover {
     justify-content: center;
     color: rgb(35, 35, 35);
     font-size: 2rem;
+}
+
+/* Responsivo */
+
+/* Celular */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .header-container {
+        padding: 0 2%;
+        background-image: url('../img/fundo-responsivo.png');
+        background-position-y: 11rem;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .header {
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .social-media a {
+        padding: 1rem 3rem;
+        min-width: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        display: inline;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .card-container {
+        display: inline;
+    }
+
+    .card {
+        margin: 3rem auto 0 auto;
+    }
+
+    .card-text {
+        margin: 5% auto;
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .contato {
+        margin-top: 25%;
+    }
+}
+
+/* Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-container {
+        padding: 0 5%;
+        justify-content: space-evenly;
+        align-items: baseline;
+        background-position-x: -2rem;
+        background-position-y: 5rem;
+    }
+
+    .navbar ul {
+        text-align: center;
+    }
+
+    .header {
+        margin: -20% auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .card-text {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
+    .contato {
+        margin-top: 25%;
+    }
 }
