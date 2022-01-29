@@ -311,6 +311,10 @@ a:hover {
         background-position-x: -2rem;
         background-position-y: 5rem;
     }
+    
+     .navbar {
+        width: 90%;
+    }
 
     .navbar ul {
         text-align: center;
@@ -333,6 +337,7 @@ a:hover {
     .card-text {
         width: 50%;
         font-size: 1.2rem;
+        margin-left: 5%;
     }
 
     .contato {
