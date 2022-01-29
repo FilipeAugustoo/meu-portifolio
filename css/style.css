@@ -337,6 +337,15 @@ a:hover {
         font-size: 2rem;
         text-align: center;
     }
+
+    .social-media {
+        padding: 1rem 2.5rem;
+        min-width: 0.5rem;
+    }
+
+    .social-media a {
+        font-size: 2.5rem;
+    }
     
     .card-container {
         padding: 0 5%;
