@@ -255,17 +255,17 @@ a:hover {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         text-align: center;
     }
     
     h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-align: center;
     }
 
     .social-media a {
-        padding: 1rem 3rem;
+        padding: 1rem 2.5rem;
         min-width: 0.5rem;
         font-size: 1.6rem;
         font-weight: bold;
