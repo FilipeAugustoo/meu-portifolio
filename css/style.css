@@ -333,6 +333,10 @@ a:hover {
         font-size: 2rem;
         text-align: center;
     }
+    
+    .card-container {
+        padding: 0 5%;
+    }
 
     .card-text {
         width: 50%;
