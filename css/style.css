@@ -59,6 +59,7 @@ h2 {
 
 a:hover {
     background-color: white;
+    color: rgb(35, 35, 35);
 }
 
 .navbar {
@@ -91,7 +92,6 @@ a:hover {
 
 .navbar ul li:hover {
     font-size: 1.8rem;
-    color:rgb(35, 35, 35);
 }
 
 /* Main */
